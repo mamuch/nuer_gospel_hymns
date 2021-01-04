@@ -33,26 +33,26 @@
 
 <script id="MainScript">
     // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-        apiKey: "AIzaSyApXR1vu-Cblft7KsZPe2JMdXkDvTdVYxA",
-        authDomain: "nuer-gospel-hymns.firebaseapp.com",
-        projectId: "nuer-gospel-hymns",
-        storageBucket: "nuer-gospel-hymns.appspot.com",
-        messagingSenderId: "1050051086",
-        appId: "1:1050051086:web:d508f92a5bbd0745e2325f",
-        measurementId: "G-36N3GBP79F"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+    // // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // var firebaseConfig = {
+    //     apiKey: "AIzaSyApXR1vu-Cblft7KsZPe2JMdXkDvTdVYxA",
+    //     authDomain: "nuer-gospel-hymns.firebaseapp.com",
+    //     projectId: "nuer-gospel-hymns",
+    //     storageBucket: "nuer-gospel-hymns.appspot.com",
+    //     messagingSenderId: "1050051086",
+    //     appId: "1:1050051086:web:d508f92a5bbd0745e2325f",
+    //     measurementId: "G-36N3GBP79F"
+    // };
+    // // Initialize Firebase
+    // firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
 
 
     var numHymn, titleHymn, contHymn;
     function Ready() {
-        numHymn = document.getElementById('hymnNo').Value;
-        titleHymn = document.getElementById('hymnTitle').Value;
-        contHymn = document.getElementById('hymnContent').Value;
+        numHymn = document.getElementById('hymnNo').nodeValue;
+        titleHymn = document.getElementById('hymnTitle').nodeValue;
+        contHymn = document.getElementById('hymnContent').nodeValue;
     }
 
 
@@ -65,6 +65,5 @@
         });
     }
 </script>
-
 
 </html>
