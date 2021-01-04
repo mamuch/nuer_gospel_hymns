@@ -54,6 +54,16 @@
         titleHymn = document.getElementById('hymnTitle').Value;
         contHymn = document.getElementById('hymnContent').Value;
     }
+
+
+    document.getElementById('insert').onclick = function () {
+        Ready();
+        firebase.database().ref('hymns/' + numHymn).set({
+            Number: numHymn,
+            Title: titleHymn,
+            Content: contHymn
+        });
+    }
 </script>
 
 
